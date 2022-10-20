@@ -41,7 +41,7 @@ class EthController extends Controller
        $apikey=Config::get('crypto.ETH_ERC20_TOKEN_APIKEY');
       
 
-       $response = Http::get('https://api.etherscan.io/api?module=account&action=txlist&address='.$ethaddress.'&startblock='.$blocknumber.'&sort=asc&apikey='.$apikey);
+       $response = Http::timeout(180)->get('https://api.etherscan.io/api?module=account&action=txlist&address='.$ethaddress.'&startblock='.$blocknumber.'&sort=asc&apikey='.$apikey);
        $data=$response->collect();
        $lists=$data['result'];
       
