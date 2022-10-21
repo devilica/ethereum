@@ -23,7 +23,7 @@ class EthController extends Controller
       
 
        $validator = Validator::make($request->all(),[
-        'ethaddress' => ['required', 'string'],
+        'ethaddress' => ['required', 'regex:/^0x[a-fA-F0-9]{40}$/'],
         'blocknumber' => ['required', 'integer'],
     ]);
     if ($validator->fails()) {
@@ -60,7 +60,7 @@ class EthController extends Controller
     public function getBalance(Request $request){
     
         $validator = Validator::make($request->all(),[
-         'addresseth' => ['required', 'string'],
+         'addresseth' => ['required', 'regex:/^0x[a-fA-F0-9]{40}$/'],
          'time' => ['required', 'date'],
      ]);
      if ($validator->fails()) {
