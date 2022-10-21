@@ -18,6 +18,8 @@
                 </div>
             </div>
             @include('searchform')
+            @include('balance')
+
             @yield('content')
         </div>
     </div>

@@ -24,6 +24,7 @@ Route::middleware(['auth'])->group(function(){
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/transactions', 'EthController@searchTransactions');
+Route::post('/balance', 'EthController@getBalance');
 
 
 });
