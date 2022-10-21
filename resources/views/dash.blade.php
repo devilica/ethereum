@@ -22,7 +22,9 @@
                         
                         <h5>You can <a href="{{ route('register') }}" style="text-transform: uppercase;color: #4CAF50; " >REGISTER</a>
                          to test ETH search or you can <a href="{{ route('login') }}" style="text-transform: uppercase;color: #4CAF50;">LOG IN</a>!!</h5>
-                           
+                         You can login to test on <a href="https://ethtestmain.herokuapp.com/">https://ethtestmain.herokuapp.com</a>
+                         <p>Test email: <b>ethtest@gmail.com</b></p>
+                         <p>Test password: <b>12345678</b></p>
                         
                         @endif
                     @endauth
