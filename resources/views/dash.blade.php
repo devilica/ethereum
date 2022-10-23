@@ -1,4 +1,3 @@
-
 <div class="container" style="margin-top:20px">
     <div class="row justify-content-center">
         <div class="col-md-6" style="height: 400px">

@@ -4,7 +4,7 @@
 <div class="container ">
 
 
-<div class="container" style="margin-top: 40px; background-color: white;  border: 5px solid green; border-radius: 25px;">
+<div class="container" style="background-color: white;  border: 5px solid #3bd562; border-radius: 25px;">
 
 <form method="POST" action="{{url('/transactions')}}">
   @csrf
@@ -24,7 +24,7 @@
 
   </div>
   <br>
-  <button type="submit" class="btn btn-primary btn-block" style="margin-top: 20px; margin-bottom: 20px;margin-left: 20px; margin-right: 20px">Submit</button>
+  <button type="submit" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 20px;margin-left: 20px; margin-right: 20px">Submit</button>
 </form>
 </div>
 </div>

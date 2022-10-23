@@ -13,15 +13,39 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+  <!-- <link href="{{url('css/app.css')}}" rel="stylesheet">-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
 
     <!-- Scripts -->
+
     @vite(['resources/js/app.js'])
+
+    <style>
+         .main-img {
+                background-image: url('images/back.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                background-attachment: fixed;
+
+            }
+            .header {
+            padding: 15px;
+            text-align: center;
+            background: #107b48;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-weight:bold;
+            }
+        
+    </style>
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="main-img">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">

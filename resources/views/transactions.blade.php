@@ -2,14 +2,13 @@
 
 @section('content')
 
-<body>
-<div class="container ">
+<<div class="header">
 
-<h1 style="color: #4CAF50;   text-align: center; ">Transactions that containing ETH address <a href="{{'https://etherscan.io/address/'.$ethaddress}}" style="color: black"  target="_blank"> {{$ethaddress}}</a> from block <a href="{{'https://etherscan.io/block/'.$blocknumber}}" style="color: black"  target="_blank">{{$blocknumber}}</a></h1>
-<div class="container" style="margin-top: 40px; background-color: white;">
-
+Transactions that containing ETH address <a href="{{'https://etherscan.io/address/'.$ethaddress}}" style="color: black; font-size:0.87rem !important;"  target="_blank"> {{$ethaddress}}</a> from block <a href="{{'https://etherscan.io/block/'.$blocknumber}}" style="color: black;font-size:0.87rem !important;"  target="_blank">{{$blocknumber}}</a>
+</div>
     @foreach($lists as $key=>$list)
-        <div class="card text-white bg-success mb-3">
+    <div class="main-img row  justify-content-center">
+        <div class="card text-white bg-success mb-3 col-md-8 " >
         <div class="card-header">Block number: {{$list['blockNumber']}}</div>
         <div class="card-body">
             <h4 class="card-title">Details about transaction</h4>
@@ -36,12 +35,11 @@
 
         </div>
         </div>
+        </div>
+     
 
     @endforeach   
-</div>
-</div>
 
 
-</body>
 
 @endsection

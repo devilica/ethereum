@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
        
-        <title>Laravel</title>
+        <title>ETH search</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,11 +21,20 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .main-img {
+                background-image: url('images/back.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                height: 100vh;
+                width: 100%;
+            }
         </style>
     </head>
     <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
+        <div class="main-img relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+          <!--  @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
@@ -37,7 +46,7 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif-->
 
             @include('dash')
         </div>

@@ -1,9 +1,10 @@
 @extends('home')
 
 @section('content')
+<div class="main-img   justify-content-center" style="height: 95vh !important;!">
 
 
-<div class="container" style="margin-top:20px">
+<div class="container" style="margin-top:160px">
     <div class="row justify-content-center">
         <div class="col-md-6" style="height: 40px">
             <div class="card">
@@ -33,5 +34,5 @@
     </div>
 </div>
 
-
+</div>
 @endsection
